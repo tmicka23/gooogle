@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Gooogle</title>
 	
 	<!-- CSS -->
@@ -15,8 +16,8 @@
 	<header>
 		<nav class="header-nav">
 			<ul class="header-nav-links">
-				<li class="header-nav-item"><i class="material-icons">apps</i></li>
-				<li class="header-nav-item"><button class="header-nav-button">Connexion</button></li>
+				<li class="header-nav-item"><a href="#Apps" class="header-nav-apps"><i class="material-icons">apps</i></a></li>
+				<li class="header-nav-item"><a href="#Connexion" class="header-nav-button">Connexion</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -26,14 +27,19 @@
 		<!-- logo -->
 		<img src="img/googlelogo.png" alt="logo de Google" class="main-img">
 		<!-- search input -->
-		<input type="text" class="main-search">
+		<input 
+		type="text" 
+		placeholder="Effectuez une recherche sur Google ou saisissez une URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#xf130;" 
+		onfocus="this.placeholder= ' '" 
+		onblur="this.placeholder= 'Effectuez une recherche sur Google ou saisissez une URL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#xf130;'" 
+		class="main-search">
 		<!-- recent search shortcuts -->
 		<div class="main-shortcuts">
-			<div class="main-shortcut-item"><i class="fa fa-github fa-2x"></i></div>
-			<div class="main-shortcut-item"><i class="fa fa-dribbble fa-2x"></i></div>
-			<div class="main-shortcut-item"><i class="fa fa-instagram fa-2x"></i></div>
-			<div class="main-shortcut-item"><i class="fa fa-facebook fa-2x"></i></div>
-			<div class="main-shortcut-item"><i class="fa fa-twitter fa-2x"></i></div>
+			<a href="#Github" class="main-shortcut-item"><i class="fa fa-github fa-2x"></i></a>
+			<a href="#Dribble" class="main-shortcut-item"><i class="fa fa-dribbble fa-2x"></i></a>
+			<a href="#Instagram" class="main-shortcut-item"><i class="fa fa-instagram fa-2x"></i></a>
+			<a href="#Facebook" class="main-shortcut-item"><i class="fa fa-facebook fa-2x"></i></a>
+			<a href="#Twitter" class="main-shortcut-item"><i class="fa fa-twitter fa-2x"></i></a>
 		</div>
 	</div>
   </body>
